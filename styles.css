@@ -1,7 +1,14 @@
+@import url("css/dark-mode.css");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #d6d6d6;
+  color: #ffffff;
+  background-image: url("img/bg-question.png");
+}
 /* Intentar añadir animaciones cuando se genere el quiz */

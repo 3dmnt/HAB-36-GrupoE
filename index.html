@@ -4,15 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Final Módulo Html Css & Js</title>
+    <!-- Fuente: Font-Awesome (para los iconos) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <!-- Conectar con hoja de estilo -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body id="page">
     <header>
       <!-- Generar un header con navegación (pensar en opciones para navegar) -->
+      <div class="container-btn-mode">
+        <div id="id-sun" class="btn-mode sun active">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div id="id-moon" class="btn-mode moon">
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Crear una plantilla para luego traspasar a innerHTML-->
     </main>
     <!-- Conectar a JS -->
+    <script type="module" src="main.js"></script>
   </body>
 </html>
