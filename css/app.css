@@ -36,7 +36,6 @@
   color: white;
 }
 
-/*nos aseguramos que sea 100 de la pantalla aunque en movil salga la escritura*/
 
 /*contenido*/
 .quiz-container {
@@ -48,12 +47,22 @@
   align-items: center;
   text-align: center;
 }
+
+
 .quiz-container-style {
-  backdrop-filter: blur(1.5px); /*  solo las pregunrtas OJO*/
-  background-color: rgba(255, 255, 255, 0.034);
-  padding: 5rem;
+  backdrop-filter: blur(1.5px);
+  background-color: rgba(255, 255, 255, 0.035);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
   border-radius: 18px;
-  border: 2px solid #ffee004d;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(255, 238, 0, 0.3);
+  border-image: initial;
+
 }
 
 #question-container {
@@ -74,8 +83,9 @@
 }
 
 #felicitaciones-img {
-  margin-bottom: 1rem;
   border-radius: 25px;
+  margin: 3rem auto;
+
 }
 /* Botones */
 
@@ -122,18 +132,39 @@
   transform: translateY(5px);
 }
 
+/* Añadir reglas de medios para pantallas pequeñas */
 @media (max-width: 500px) {
+  /* Botones */
   .class-btn {
     width: 100%;
-    font-size: 15px;
+    font-size: 5vw;
+    height: 12vw; 
   }
 
+  #restart-btn {
+    width: 80vw;
+    font-size: 5vw;
+    padding: 3vw; 
+  }
+
+  /* Preguntas y puntuación */
   #question-container p,
   #user-score,
   .question-number {
     font-size: 2rem;
   }
+
+  /* Imagen de felicitaciones */
   #felicitaciones-img {
-    width: 250px;
+    width: 80vw; 
+    margin: 3vw auto; 
+  }
+
+  /* Contenedor de la prueba */
+  .quiz-container-style {
+    width: 90vw;
+    height: 620px;
+    padding: 1em;
+   
   }
 }

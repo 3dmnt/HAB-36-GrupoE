@@ -19,6 +19,7 @@ body {
   min-height: 100dvh;
   background-image: url("img/bg-question.png");
   color: #424243;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -75,7 +76,6 @@ a:hover {
     margin-bottom: 3rem;
   }
   label {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 2rem;
   }
 }
