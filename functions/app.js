@@ -79,9 +79,10 @@ function checkAnswer(answer, correctAnswer) {
   });
 
   setTimeout(() => {
-    if (currentQuestionIndex < questions.length - 1) {
+    if (currentQuestionIndex < questions.length) {
       displayQuestions(++currentQuestionIndex);
-    } else {
+    }
+    if (currentQuestionIndex === questions.length) {
       felicitacionesImg.style.display = "block";
       questionContainer.style.display = "none";
     }
