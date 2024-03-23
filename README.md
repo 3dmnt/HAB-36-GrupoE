@@ -12,7 +12,7 @@
   7. [Desarrolladores ✏️](#contact)
 
 ## Sobre el proyecto ✒️ <a name="about"></a>
-Este juego de preguntas y respuestas es un proyecto desarrollado durante el bootcamp de programación web de <a href="https://www.hackaboss.com/">Hack a Boss</a>. A partir del JSON con preguntas y respuestas proporcionado se crea la app incluyendo una serie de requisitos básicos a los que se añaden funcionalidades extra para mejorar la experiencia del jugador.
+Este juego de preguntas y respuestas es un proyecto desarrollado durante el bootcamp de programación web de <a href="https://www.hackaboss.com/">HACK A BOSS</a>. A partir del JSON con preguntas y respuestas proporcionado se crea la app incluyendo una serie de requisitos básicos a los que se añaden funcionalidades extra para mejorar la experiencia del jugador.
 
 ## Construido con 🛠️ <a name="built-with"></a>
 Esta app ha sido desarrollada con: 
@@ -31,7 +31,7 @@ Esta app ha sido desarrollada con:
 - La función checkAnswer verifica si la respuesta es correcta o incorrecta y pasa directamente a la siguiente pregunta aplicando un setTimeout.
 - Una vez respondidas las preguntas, se gestiona el reinicio del juego mediante un evento y la función playAgain resetea tanto el quiz como las variables.
 
-## UI <a name="ui"></a>
+## UI 📱 <a name="ui"></a>
 
 - Diseño mobile first.
 - Diseño responsive mediante media query. 
@@ -41,7 +41,7 @@ Esta app ha sido desarrollada con:
 Este es un proyecto de código abierto y las contribuciones son bienvenidas.
 
 ## Licencia 📄 <a name="license"></a>
-
+Este proyecto cuenta con licencia conforme a los términos de la licencia MIT.
 
 ## Desarrolladores ✏️ <a name="contact"></a>
 <a href="https://github.com/3dmnt"><img alt="Static Badge" src="https://img.shields.io/badge/Fran_J._Dorado-white?style=for-the-badge&logo=github&logoColor=black">
