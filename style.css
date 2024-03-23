@@ -1,0 +1,83 @@
+@import url("css/app.css");
+@import url("css/dark-mode.css");
+@import url("css/form.css");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  background-color: #cecebd;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100dvh;
+  background-image: url("img/bg-question.png");
+  color: #424243;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: #424243;
+  margin-bottom: 3rem;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+footer p {
+  background-color: #424243;
+  text-align: center;
+  padding: 4px;
+}
+
+footer p:hover {
+  color: rgba(253, 253, 253, 0.555);
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #424243;
+  font-style: italic;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+    color: #424243;
+    margin-bottom: 3rem;
+  }
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

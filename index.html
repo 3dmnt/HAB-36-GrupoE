@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Final Módulo Html Css & Js</title>
-    <!-- Fuente: Font-Awesome (para los iconos) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- Conectar con hoja de estilo -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body id="page">
-    <header>
-      <!-- Generar un header con navegación (pensar en opciones para navegar) -->
-      <!-- AQUI EMPIEZA EL BOTON PARA CAMBIAR A MODO CLARO/OSCURO -->
-      <div class="container-btn-mode">
-        <div id="id-sun" class="btn-mode sun active">
-          <i class="fas fa-sun"></i>
-        </div>
-        <div id="id-moon" class="btn-mode moon">
-          <i class="fas fa-moon"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz APP - Hack A Boss Project</title>
+  <!-- Fuente: Font-Awesome (para los iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- Vincular a estilos -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/form.css" />
+</head>
+
+<body id="page">
+  <header>
+    <!-- AQUI EMPIEZA EL BOTON PARA CAMBIAR A MODO CLARO/OSCURO -->
+    <div class="container-btn-mode">
+      <div id="id-sun" class="btn-mode sun active">
+        <i class="fas fa-sun"></i>
+      </div>
+      <div id="id-moon" class="btn-mode moon">
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+    <!-- AQUI ACABA EL BOTON PARA CAMBIAR A MODO CLARO/OSCURO -->
+  </header>
+  <main>
+    <div class="quiz-container">
+      <div id="question-container">
+        <div class="quiz-container-style">
+          <h1>Quiz</h1>
+          <div class="container-form">
+            <form id="loginForm" class="form" action="./pages/app.html" method="GET">
+              <div class="content-select">
+                <p class="title">Welcome</p>
+                <!-- FORMULARIO PARA PONER UN NOMBRE DE USUARIO -->
+                <label for="user-name">Name:</label>
+                <input id="userID" name="user-name" placeholder="Insert your name..." class="username input" type="text"
+                  required />
+                <label for="amount-questions">How many questions do you want to answer?</label>
+                <!-- DESPLEGABLE PARA ELEGIR NUMERO DE PREGUNTAS -->
+                <select name="amount-questions" id="amount-questions-desplegable">
+                  <option value="10">Just 10 questions</option>
+                  <option value="20">Just 20 questions</option>
+                  <option value="30">Just 30 questions</option>
+                  <option value="40">Just 40 questions</option>
+                  <option value="50">Just 50 questions</option>
+                </select>
+                <button type="submit" class="btn-jugar hvr-float-shadow">
+                  Let's play!
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <!-- AQUI ACABA EL BOTON PARA CAMBIAR A MODO CLARO/OSCURO -->
-    </header>
-    <main>
-      <!-- Crear una plantilla para luego traspasar a innerHTML-->
-    </main>
-    <!-- Conectar a JS -->
-    <script type="module" src="main.js"></script>
-  </body>
+    </div>
+  </main>
+  <script src="index.js" type="module"></script>
+</body>
+<footer>
+  <a href="https://github.com/3dmnt/HAB-36-GrupoE">
+    <p>Check this project details</p>
+  </a>
+</footer>
+
 </html>

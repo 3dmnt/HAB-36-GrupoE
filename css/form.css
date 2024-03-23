@@ -1,0 +1,137 @@
+.container-form {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.form {
+  width: 400px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  margin: 1.5rem 0;
+}
+
+.input {
+  margin: 0.5rem 0;
+  padding: 1rem 0.5rem;
+  width: 20rem;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.username {
+  border-bottom: 1px solid;
+  transition: all 400ms;
+  margin-bottom: 2rem;
+}
+
+.username:hover {
+  background-color: #57565625;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.amount-questions {
+  border-bottom: 1px solid #fff500;
+  transition: all 400ms;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: block;
+}
+
+.btn-jugar {
+  font-size: 1.8rem;
+  padding: 1rem;
+  width: 20rem;
+  text-align: center;
+  border: 0, 1rem solid #fff500;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: black;
+  background-color: #fff500;
+  border-radius: 15px;
+}
+
+.btn-jugar[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* css para selaccion de radio */
+
+.content-input input,
+.content-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.content-select select::-ms-expand {
+  display: none;
+}
+.content-select {
+  max-width: max-content;
+  position: relative;
+  display: contents;
+}
+
+.content-select select {
+  margin-top: 0.8rem;
+  width: fit-content;
+  cursor: pointer;
+  padding: 7px 45px;
+  height: 42px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #fff500;
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.content-select select:hover {
+  background: #a8a8a11c;
+}
+
+/* 
+Creamos la fecha que aparece a la izquierda del select.
+Realmente este elemento es un cuadrado que sólo tienen
+dos bordes con color y que giramos con transform: rotate(-45deg);
+*/
+.content-select i {
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 13px);
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-left: 4px solid #fff500;
+  border-bottom: 4px solid #fff500;
+  transform: rotate(-45deg); /* Giramos el cuadrado */
+  transition: all 0.25s ease;
+}
+
+.content-select:hover i {
+  margin-top: 3px;
+}
+
+@media (max-width: 500px) {
+}

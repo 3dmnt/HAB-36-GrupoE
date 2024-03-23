@@ -6,6 +6,10 @@
   z-index: 2;
   font-size: 0;
 }
+.active {
+  background-color: #424243;
+}
+
 .btn-mode {
   display: inline-block;
   width: 50px;
@@ -24,22 +28,26 @@
   border-bottom-left-radius: 20px;
   border-right: 1px solid transparent;
 }
+.btn-mode.sun.active i {
+  color: #e2df1d;
+}
+
 .btn-mode.moon {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.active {
-  background-color: #1a1c1e;
-  color: #ffcd5c !important;
+.btn-mode.moon.active i {
+  color: #e2df1d;
 }
 
 .dark-mode {
-  background-color: #0e0e0e;
+  background-color: #424243;
   background-image: url("../img/bg-question-for-dark.png");
   transition: background-color 0.5s;
+  color: white;
 }
 .dark-mode .card {
-  background-color: #1a1c1e;
+  background-color: #424243;
 }
 .dark-mode h1,
 .dark-mode h2,
@@ -50,4 +58,18 @@
   background-color: #1a1c1e;
   border: 1px solid white;
   color: white;
+}
+
+.darkmode .form {
+  background-image: linear-gradient(to bottom, #ffffff3a, #ebebeb41);
+}
+
+@media (max-width: 600px) {
+  .container-btn-mode {
+    top: 2px;
+    right: 2px;
+  }
+  body {
+    background-image: none;
+  }
 }
